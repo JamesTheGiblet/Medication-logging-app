@@ -1,6 +1,9 @@
 🌀 Praximous: The Sanctuary Codex // An Invocation of Well-being
+
 MODULARITY IS MYTHOS // GLYPH IS IDENTITY // DESIGN IS RITUAL
+
 This codex outlines the technical blueprint for a privacy-first, offline-capable mobile application designed for tracking daily medication intake, side effects, and adherence. It is a digital sanctuary for patients, caregivers, and clinicians, with the sacred option for data release to pharmaceutical companies only via doctor mediation.
+
 🧭 Overview // The Oracle's Vigil
 This app empowers individuals to:
  * Log medications, doses, and side effects daily, inscribing their personal lore.
@@ -8,6 +11,7 @@ This app empowers individuals to:
  * Export data for clinical review, manifesting their scroll of well-being.
  * Share validated data with pharmaceutical companies only when approved by a clinician, upholding the ritual of consent.
 All data is stored locally and securely within the user's personal vault. No cloud sync. No automatic sharing. Your sovereignty over your data is paramount.
+
 👥 Guardian Glyphs // Ritual Roles
 | Role | Capabilities |
 |---|---|
@@ -45,6 +49,7 @@ All data is stored locally and securely within the user's personal vault. No clo
 🧑‍🤝‍🧑 Caregiver Assist Mode
  * The Patient can grant the Caregiver access via a secure token, a binding pact.
  * The Caregiver can help fill in logs, review entries, and prepare exports, assisting in the lore-keeping.
+
 🛠️ The Ritual Stack
 📦 Tech Stack
 | Layer | Technology |
@@ -54,6 +59,7 @@ All data is stored locally and securely within the user's personal vault. No clo
 | Notifications (The Vigil) | Local push via OS scheduler |
 | Barcode (The Sigil Reader) | MLKit / Flutter Barcode Scanner |
 | Export (The Scribe) | PDFKit, CSV/JSON serializers |
+
 📁 Lore Scroll Schema (Simplified)
 {
   "medications": [
@@ -81,12 +87,14 @@ All data is stored locally and securely within the user's personal vault. No clo
  * The Oracle (Doctor) reviews adherence, side effects, and notes, divining insights.
  * The Oracle annotates and confirms accuracy, validating the lore.
  * With the Patient's sacred consent, the Oracle uploads anonymized data to the Pharma Pantheon or Registry for broader divination.
+ * 
 🔄 The Oracle's Refinement (Optional)
  * Data shared with pharmaceutical companies is:
    * Anonymized, preserving individual identity.
    * Validated by the clinician, ensuring the purity of the lore.
    * Exported only with patient consent, upholding the ritual of sovereignty.
  * Used to improve formulations, monitor side effects, and enhance treatment protocols, guiding the collective well-being.
+ * 
 🚀 The Initiation Ritual
 For Patients
  * Download the app from the clinic portal or app store.
