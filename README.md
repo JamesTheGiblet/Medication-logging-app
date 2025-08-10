@@ -1,109 +1,71 @@
-🌀 Praximous: The Sanctuary Codex // An Invocation of Well-being
+## **Project: MedLog - A Private Medication Tracker**
 
-MODULARITY IS MYTHOS // GLYPH IS IDENTITY // DESIGN IS RITUAL
+### **The Problem**
 
-This codex outlines the technical blueprint for a privacy-first, offline-capable mobile application designed for tracking daily medication intake, side effects, and adherence. It is a digital sanctuary for patients, caregivers, and clinicians, with the sacred option for data release to pharmaceutical companies only via doctor mediation.
+Most health apps are garbage. They're confusing, they require an internet connection, and—worst of all—they sell your personal health data to the highest bidder. That’s not just bad design; it's a violation of trust.
 
-🧭 Overview // The Oracle's Vigil
-This app empowers individuals to:
- * Log medications, doses, and side effects daily, inscribing their personal lore.
- * Receive reminders and review weekly summaries, guided by the Oracle's vigil.
- * Export data for clinical review, manifesting their scroll of well-being.
- * Share validated data with pharmaceutical companies only when approved by a clinician, upholding the ritual of consent.
-All data is stored locally and securely within the user's personal vault. No cloud sync. No automatic sharing. Your sovereignty over your data is paramount.
+### **The Solution**
 
-👥 Guardian Glyphs // Ritual Roles
-| Role | Capabilities |
-|---|---|
-| Patient (The Seeker) | Logs medication, receives reminders, exports data for the clinician. |
-| Caregiver (The Attendant) | Assists with logging (if granted access), helps review entries. |
-| Clinician (The Oracle) | Reviews logs, annotates, and releases data externally with patient consent. |
-| Pharma / Registry (The Pantheon) | Receives anonymized, validated data via clinician upload for broader divination. |
-📲 Key Invocations
-✅ Lore-Keeping Rituals
- * Add medications manually or via barcode sigil scan.
- * Auto-fill dosage and schedule from a local medication database.
- * Log side effects with severity, timing, and notes, capturing the nuances of the journey.
- * Daily reminders for scheduled doses, ensuring adherence to the ritual.
- * Weekly review prompt, for a moment of reflection and insight.
-📷 Sigil Divination
- * Scan medication packaging to auto-fill name, dose, and schedule.
- * Works offline using a bundled medication database, ensuring continuous access to knowledge.
- * Supports EAN/UPC and NHS codes, recognizing the universal glyphs.
-📁 Scroll Manifestation & Review
- * Generate encrypted PDF/CSV/JSON summaries, manifesting your data as a secure scroll.
- * Export only occurs when the patient initiates, upholding their data sovereignty.
- * The Oracle (Doctor) reviews and confirms before external sharing, ensuring validation of the lore.
-🔐 Sanctuary & Sovereignty
- * All data stored locally using encrypted SQLite (SQLCipher), within your personal digital vault.
- * No cloud sync or background sharing, preserving the sanctity of your data.
- * Role-based access control for caregivers, granting controlled access to the vault.
- * Audit trail for all exports and edits, maintaining an immutable lineage of interactions.
-🧩 Inclusive Invocations
-🧑‍🦯 Universal Glyphs
- * Large text and high-contrast UI modes for clear visibility.
- * Voice input for logging meds and side effects, enabling diverse forms of invocation.
- * Tap-based logging for users with limited dexterity, simplifying the ritual.
- * Screen reader support (TalkBack / VoiceOver), ensuring the Oracle's voice is heard by all.
- * Optional simplified interface for cognitive accessibility, making the ritual accessible to every seeker.
-🧑‍🤝‍🧑 Caregiver Assist Mode
- * The Patient can grant the Caregiver access via a secure token, a binding pact.
- * The Caregiver can help fill in logs, review entries, and prepare exports, assisting in the lore-keeping.
+MedLog. A simple, offline-first app that helps you track your medications and side effects. **Your data stays on your phone. Period.** It doesn't go to the cloud, and it's not for sale. It's a tool, not a data-mining operation.
 
-🛠️ The Ritual Stack
-📦 Tech Stack
-| Layer | Technology |
-|---|---|
-| Frontend (The Portal) | Flutter (Android/iOS) |
-| Storage (The Vault) | Encrypted SQLite (SQLCipher) |
-| Notifications (The Vigil) | Local push via OS scheduler |
-| Barcode (The Sigil Reader) | MLKit / Flutter Barcode Scanner |
-| Export (The Scribe) | PDFKit, CSV/JSON serializers |
+### **How It Works**
 
-📁 Lore Scroll Schema (Simplified)
-{
-  "medications": [
-    {
-      "name": "Metformin",
-      "dose": "500mg",
-      "schedule": "08:00 daily",
-      "taken": "08:15",
-      "side_effects": [
-        {
-          "type": "nausea",
-          "severity": "mild",
-          "duration": "30min"
-        }
-      ],
-      "notes": "Felt dizzy after breakfast"
-    }
-  ],
-  "reviewed_by": "Dr. Smith",
-  "exported_on": "2025-08-06"
-}
+* **Log Your Meds & Side Effects:** Quickly add your medications, dosages, and schedules. Record any side effects with details like severity and timing.
+* **Scan Your Medication Box:** Use the phone's camera to scan the barcode on a medicine box. The app pulls the name and dose from a built-in, offline database.
+* **Get Simple Reminders:** The app sends you a local notification when it's time to take a dose. No internet required.
+* **Export for Your Doctor:** Generate a simple PDF or data file of your logs to share with your doctor. You are in control of when this happens.
+* **Your Data is Yours. Period:** The app stores everything locally on your phone in an encrypted file. There is no cloud sync. We can't see your data, and we don't want to.
 
-🩺 The Clinician's Ritual
- * The Patient manifests logs before the appointment, presenting their scroll.
- * The Oracle (Doctor) reviews adherence, side effects, and notes, divining insights.
- * The Oracle annotates and confirms accuracy, validating the lore.
- * With the Patient's sacred consent, the Oracle uploads anonymized data to the Pharma Pantheon or Registry for broader divination.
- * 
-🔄 The Oracle's Refinement (Optional)
- * Data shared with pharmaceutical companies is:
-   * Anonymized, preserving individual identity.
-   * Validated by the clinician, ensuring the purity of the lore.
-   * Exported only with patient consent, upholding the ritual of sovereignty.
- * Used to improve formulations, monitor side effects, and enhance treatment protocols, guiding the collective well-being.
- * 
-🚀 The Initiation Ritual
-For Patients
- * Download the app from the clinic portal or app store.
- * Scan the medication box sigil or enter manually.
- * Log daily intake and side effects, beginning your lore-keeping.
- * Export logs before your Oracle visit, preparing your scroll.
-For Clinicians
- * Review patient logs during the appointment, divining the narrative.
- * Annotate and confirm entries, validating the lore.
- * Upload anonymized data if the patient consents, for the Oracle's refinement.
-📜 Sanctuary Codex & Ethical Invocations
-This app is designed with patient sovereignty, privacy, and ethical data sharing at its core. All exports are opt-in, and no data leaves the device without explicit consent. This is a sacred pact between the seeker and their sanctuary.
+### **Who It's For**
+
+The app has a few simple roles, with clear rules.
+
+| Role               | What They Can Do                                             |
+| ------------------ | ------------------------------------------------------------ |
+| **Patient** | The main user. Logs meds, gets reminders, exports data.       |
+| **Caregiver** | Can be given access by the patient to help log entries.        |
+| **Doctor** | Can review the exported logs from the patient.               |
+| **Researcher** | Can **only** get data if the patient and doctor **both** approve it. |
+
+### **Built for Everyone**
+
+A tool is useless if people can't use it. This app is designed to be accessible.
+* Large text and high-contrast modes.
+* Voice input for logging.
+* Simple tap-based logging for users with limited dexterity.
+* Full screen reader support (TalkBack/VoiceOver).
+
+### **The Tech Stack (How It's Built)**
+
+No black boxes. Here’s the tech.
+
+| Layer         | Technology                  | Why?                                      |
+| ------------- | --------------------------- | ----------------------------------------- |
+| **App** | Flutter (Android/iOS)       | Build for both platforms from one codebase. |
+| **Storage** | Encrypted SQLite (SQLCipher)| Strong, local, offline-first encryption.  |
+| **Barcode** | MLKit / On-device library   | Scans barcodes without needing the internet.  |
+| **Export** | PDF/CSV/JSON serializers    | Standard formats doctors can actually use.  |
+
+### **The Data Sharing Rule (This is Important)**
+
+Data can **only** be shared with researchers (like pharmaceutical companies) if **all three** of these conditions are met:
+1.  **You (the patient) explicitly consent** to sharing for a specific purpose.
+2.  **Your doctor reviews and approves** the export.
+3.  **All data is made 100% anonymous**, stripping out any personal information.
+
+If any of these are not met, nothing is shared. There are no exceptions.
+
+### **How to Use It**
+
+**For Patients:**
+1.  Download the app.
+2.  Scan your medication box or add it manually.
+3.  Log your doses and any side effects each day.
+4.  Before your doctor's visit, use the "Export" button to create a log file.
+
+**For Doctors:**
+1.  Receive the log file from your patient.
+2.  Review it with them to track adherence and side effects.
+3.  If the patient agrees to share their data for research, you act as the final check to approve the anonymized export.
+
+No subscriptions, no ads, no selling your data. Just a tool that works. **Build first, ask permission never**—especially when it comes to your own health data.
